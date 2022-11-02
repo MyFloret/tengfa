@@ -1,4 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  首页
+    <view class="title">欢迎选购</view>
+    <view class="carbox">
+        <view class="everylast"  wx:for="{{arr}}" wx:key="item">
+            <image src="{{item.cover}}"></image>
+            <view class="every">{{item.carName}}</view>
+            <view class="gongli">{{item.mileage}}公里</view>
+            <view class="money">{{item.currentPrice}}万</view>
+        </view>
+    </view>
 </view>

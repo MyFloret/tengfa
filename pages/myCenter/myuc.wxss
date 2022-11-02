@@ -1,0 +1,21 @@
+input {
+    border: 1px solid #000;
+    width: 400rpx;
+}
+.one{
+    width: 750rpx;
+    display: flex;
+}
+.two{
+    width: 200rpx;
+    text-align: center;
+}
+picker{
+    border: 1px solid #000;
+    width: 400rpx;
+    font-weight: 300;
+}
+map{
+    width: 500rpx;
+    height: 500rpx;
+}

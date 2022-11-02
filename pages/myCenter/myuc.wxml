@@ -1,0 +1,28 @@
+<view>
+    <view class="one">
+        <view class="two">姓名:</view>
+        <view><input type="text" value="{{valueone}}" bindinput="oneput" /></view>
+    </view>
+    <view class="one">
+        <view class="two">手机号码:</view>
+        <view><input type="text" value="{{valuetwo}}" bindinput="twoput" /></view>
+    </view>
+    <view class="one">
+        <view class="two">评估车型:</view>
+        <view><input type="text" value="{{valuestree}}" bindinput="streeput" /></view>
+    </view>
+    <view class="one">
+        <view class="two">公里数:</view>
+        <view><input type="text" value="{{valuefour}}" bindinput="fourput" /></view>
+    </view>
+    <view class="one">
+        <view class="two">上牌时间:</view>
+        <view>
+            <picker bindchange="bindDateChange" value="{{date}}" mode="date">请选择时间</picker>
+        </view>
+    </view>
+    <button style="margin-top: 38rpx;" type="primary" bindtap="butgo">立即评估</button>
+   <view style="width: 500rpx; height: 500rpx; margin: 0 auto;">
+    <map name=""></map>
+   </view>
+</view>

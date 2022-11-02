@@ -1,0 +1,39 @@
+<view>
+    <view class="headtit">
+        <view class="headcenter">
+            <view bindtap="chu">品牌</view>
+            <view bindtap="twohid">车型</view>
+        </view>
+    </view>
+    <view class="pinpai" style="height: {{heig}}">
+        <scroll-view scroll-y="true">
+            <view class="cartit" wx:for="{{car}}" wx:key="item">
+                <view class="cloue">{{item.mica}}</view>
+                <view wx:for="{{item.qwe}}" data-id="{{item.id[index]}}" wx:for-item="egm" wx:key="egm" bindtap="erji">
+                    <image></image>
+                    <view>{{egm}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="youce" style="left:{{left}} ;">
+        <view bindtap="hide"></view>
+        <view class="nedtit">
+            <view wx:for="{{endtit}}" wx:key="item" data-id="{{item.id}}" bindtap="genghuan">{{item.abbreviation}}</view>
+        </view>
+    </view>
+    <view class="carbox">
+        <view class="everylast" hidden="{{flag}}" wx:for="{{arr}}" wx:key="item">
+            <image src="{{item.cover}}"></image>
+            <view class="every">{{item.carName}}</view>
+            <view class="gongli">{{item.mileage}}公里</view>
+            <view class="money">{{item.currentPrice}}万</view>
+        </view>
+    </view>
+    <view style="text-align: center; font-size: 40rpx;" hidden="{{!flag}}" hidden="{{arr.length?true:false}}">无数据</view>
+    <!--  -->
+    <!--  -->
+    <view class="chexing" style="top: {{hig}};">
+        <view wx:for="{{titarr}}" wx:key="item" data-index="{{index+1}}" bindtap="twoguan">{{item}}</view>
+    </view>
+</view>

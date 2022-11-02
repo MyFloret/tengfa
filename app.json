@@ -1,13 +1,41 @@
 {
-  "pages":[
-    "pages/index/index"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/songMenu/song",
+        "pages/myCenter/myuc"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "text": "首页", 
+                "pagePath": "pages/index/index",
+                "iconPath": "./static/icons/shouye1.png",
+                "selectedIconPath": "./static/icons/shouye.png"
+            },
+            {
+                "text": "二手车",
+                "pagePath": "pages/songMenu/song",
+                "iconPath": "./static/icons/31liebiao1.png",
+                "selectedIconPath": "./static/icons/31liebiao.png"
+            },
+            {
+                "text": "卖车",
+                "pagePath": "pages/myCenter/myuc",
+                "iconPath": "./static/icons/gerenzhongxin1.png",
+                "selectedIconPath": "./static/icons/gerenzhongxin.png"
+            }
+        ],
+        "position": "bottom",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "color": "#333",
+        "selectedColor": "#01cd74"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
