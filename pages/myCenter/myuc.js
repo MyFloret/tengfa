@@ -1,5 +1,58 @@
 // pages/myCenter/myuc.js
 import {maiche} from "../../api/request";
+import * as echarts from '../../ec-canvas/echarts'
+
+let chart = null;
+
+function initChart(canvas, width, height, dpr) {
+  chart = echarts.init(canvas, null, {
+    width,
+    height,
+    devicePixelRatio: dpr, // 重要，不加会模糊
+  });
+  canvas.setChart(chart);
+
+ // TODO: 自己根据官网配置
+  const option = {
+    color: ['#3398DB'],
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { // 坐标轴指示器，坐标轴触发有效
+        type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [{
+      type: 'category',
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      axisTick: {
+        alignWithLabel: true
+      }
+    }],
+    yAxis: [{
+      type: 'value'
+    }],
+    series: [{
+      name: '直接访问',
+      type: 'bar',
+      barWidth: '60%',
+      data: [10, 52, 200, 334, 390, 330, 220]
+    }]
+  };
+  chart.setOption(option);
+  return chart;
+}
+
+
+
+// 
+// 
+// 
 Page({
 
     /**
@@ -10,7 +63,10 @@ Page({
         valueone:'',
         valuetwo:'',
         valuestree:'',
-        valuefour:''
+        valuefour:'',
+        ec: {
+            onInit: initChart // 3、将数据放入到里面
+          }
     },
     butgo(){
         console.log(this.data.date);

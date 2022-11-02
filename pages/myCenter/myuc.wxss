@@ -19,3 +19,8 @@ map{
     width: 500rpx;
     height: 500rpx;
 }
+.box {
+    display: block;
+    width: 100%;
+    height: 468rpx;
+  }

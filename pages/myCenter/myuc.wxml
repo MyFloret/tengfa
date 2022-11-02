@@ -22,7 +22,10 @@
         </view>
     </view>
     <button style="margin-top: 38rpx;" type="primary" bindtap="butgo">立即评估</button>
-   <view style="width: 500rpx; height: 500rpx; margin: 0 auto;">
-    <map name=""></map>
-   </view>
+    <view style="width: 500rpx; height: 500rpx; margin: 0 auto;">
+        <map name=""></map>
+    </view>
+    <view class="box">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
 </view>
