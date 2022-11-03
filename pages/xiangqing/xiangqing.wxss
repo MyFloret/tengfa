@@ -1,0 +1,43 @@
+/* pages/xiangqing/xiangqing.wxss */
+.bannerA {
+    width: 100%;
+    height: 600rpx;
+}
+
+.price {
+    display: block;
+}
+
+.xiao {
+    font-size: 30rpx;
+    display: block;
+}
+
+.kuai {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15rpx;
+    height: 35rpx;
+    background-color: aqua;
+    margin-right: 30rpx;
+}
+
+.jiben>text {
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.zhi text {
+    font-size: 30rpx;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 1%;
+}
+.che text{
+    font-size: 40rpx;
+    font-weight: 600;
+}

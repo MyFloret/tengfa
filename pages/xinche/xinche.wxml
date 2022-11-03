@@ -1,0 +1,27 @@
+<view>
+    <view class="headtit">
+        <view class="headcenter">
+            <view bindtap="chu">品牌</view>
+            <view bindtap="twohid">车型</view>
+        </view>
+    </view>
+    <!--  -->
+    <view class="pinpai" style="height:{{heig}}">
+        <scroll-view scroll-y="true">
+            <view class="cartit" wx:for="{{car}}" wx:key="item">
+                <view class="cloue">{{item.mica}}</view>
+                <view wx:for="{{item.qwe}}" data-id="{{item.id[index]}}" wx:for-item="egm" wx:key="egm" bindtap="erji">
+                    <image></image>
+                    <view>{{egm}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="chexing" style="top: {{hig}};">
+        <view wx:for="{{titarr}}" wx:key="item" data-index="{{index+1}}" bindtap="twoguan">{{item}}</view>
+    </view>
+    <view>
+        <text> {{arr.carBrandMarker}}</text>
+        <text>{{arr.currentPrice}}万元</text>
+    </view>
+</view>

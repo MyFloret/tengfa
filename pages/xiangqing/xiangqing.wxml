@@ -1,0 +1,37 @@
+<view>
+    <swiper autoplay="true" class="bannerA" current>
+        <block wx:for="{{banner}}" wx:key="item">
+            <swiper-item>
+                <image src="{{item}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view>
+        <text class="price">{{deild.currentPrice}}万</text>
+        <text class="xiao">新车完税价{{deild.priceVo.carNetPrice}},为你节省{{deild.priceVo.carDownPay}}</text>
+        <text>{{deild.carName}}</text>
+    </view>
+    <view class="jiben">
+        <view class="kuai"></view>
+        <text>基本信息</text>
+    </view>
+    <view class="zhi">
+        <text>上牌时间: {{deild.parameterVo.deliveryTime}}</text>
+        <text>公里数: {{deild.mileage}}万公里</text>
+        
+        <text>车身颜色: {{deild.parameterVo.carColor}}</text>
+        <text>变速箱: {{deild.parameterVo.gearbox}}</text>
+        <text>排量: {{deild.gearboxType}}L</text>
+        <text>排放标准: {{deild.parameterVo.emissionStandard}}</text>
+        <text>燃放方式: {{deild.parameterVo.fuel}}</text>
+    </view>
+    <view class="che">
+        <view class="kuai"></view>
+        <text>车辆图片</text>
+    </view>
+    <view>
+        <block wx:for="{{banner}}" wx:key="item">
+        <image src="{{item}}"></image>
+        </block>
+    </view>
+</view>

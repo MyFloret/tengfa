@@ -2,7 +2,9 @@
     "pages": [
         "pages/index/index",
         "pages/songMenu/song",
-        "pages/myCenter/myuc"
+        "pages/myCenter/myuc",
+        "pages/xiangqing/xiangqing",
+        "pages/xinche/xinche"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -11,8 +13,9 @@
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
-        "list": [{
-                "text": "首页", 
+        "list": [
+            {
+                "text": "首页",
                 "pagePath": "pages/index/index",
                 "iconPath": "./static/icons/shouye1.png",
                 "selectedIconPath": "./static/icons/shouye.png"
@@ -26,6 +29,12 @@
             {
                 "text": "卖车",
                 "pagePath": "pages/myCenter/myuc",
+                "iconPath": "./static/icons/gerenzhongxin1.png",
+                "selectedIconPath": "./static/icons/gerenzhongxin.png"
+            },
+            {
+                "text": "新车",
+                "pagePath": "pages/xinche/xinche",
                 "iconPath": "./static/icons/gerenzhongxin1.png",
                 "selectedIconPath": "./static/icons/gerenzhongxin.png"
             }

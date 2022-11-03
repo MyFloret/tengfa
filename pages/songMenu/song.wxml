@@ -23,7 +23,7 @@
         </view>
     </view>
     <view class="carbox">
-        <view class="everylast" hidden="{{flag}}" wx:for="{{arr}}" wx:key="item">
+        <view class="everylast" hidden="{{flag}}" wx:for="{{arr}}" wx:key="item" data-id="{{item.ind}}" bindtap="tiaozhuan">
             <image src="{{item.cover}}"></image>
             <view class="every">{{item.carName}}</view>
             <view class="gongli">{{item.mileage}}公里</view>

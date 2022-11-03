@@ -1,0 +1,163 @@
+.headtit {
+    width: 750rpx;
+    height: 100rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 0rpx;
+    z-index: 99;
+}
+
+.headcenter {
+    width: 300rpx;
+    height: 100rpx;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headcenter>view {
+    display: inline-block;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    width: 130rpx;
+    background-color: sandybrown;
+}
+
+.pinpai {
+    width: 750rpx;
+    /* height: 100%; */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 100rpx;
+    z-index: 10000;
+    background-color: #ddd;
+}
+
+.cartit {
+    width: 750rpx;
+    line-height: 100rpx;
+}
+
+.cartit>view {
+    line-height: 100rpx;
+    height: 100rpx;
+}
+
+.cartit>view>image {
+    display: inline-block;
+    height: 100rpx;
+    width: 100rpx;
+}
+
+.cloue {
+    background-color: rgba(0, 0, 0, 0.089);
+    padding-left: 20rpx;
+}
+
+.cartit>view>view {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 100rpx;
+    height: 100rpx;
+    border-bottom: 1 solid #000;
+}
+
+.youce {
+    overflow: hidden;
+    width: 750rpx;
+    height: 1008rpx;
+    white-space: nowrap;
+    top: 100rpx;
+    left: 0rpx;
+    position: absolute;
+    z-index: 19;
+    transition: all .3s;
+}
+
+.youce>view:nth-of-type(1) {
+    display: inline-block;
+    vertical-align: top;
+    width: 350rpx;
+    height: 1008rpx;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.youce>view:nth-of-type(2) {
+    display: inline-block;
+    vertical-align: top;
+    width: 400rpx;
+    height: 1008rpx;
+    background-color: rgb(50, 73, 204);
+}
+
+.nedtit>view {
+    width: 100%;
+    height: 100rpx;
+    background-color: darkorchid;
+    margin-top: 5rpx;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.carbox{
+    top: 100rpx;
+    left: 0rpx;
+    position: absolute;
+    z-index: 8;
+    width: 750rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.everylast{
+    width: 350rpx;
+    height: 500rpx;
+    margin-top: 10rpx;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.everylast>image{
+    width: 350rpx;
+    height: 300rpx;
+}
+.every{
+    width: 350rpx; 
+    line-height:70rpx ;
+    height: 70rpx;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.gongli{
+    line-height:60rpx ;
+    height: 60rpx;
+}
+.money{
+    line-height:50rpx ;
+    height: 50rpx;
+    color: red;
+    font-weight: 600;
+}
+.chexing{
+    position: absolute;
+    width: 750rpx;
+    height: 350rpx;
+    z-index: 20;
+    background-color: rgb(236, 148, 148);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all .3s;
+}
+.chexing>view{
+    width: 200rpx;
+    margin-left: 45rpx;
+    text-align: center;
+    background-color: darksalmon;
+}

@@ -30,4 +30,10 @@ Page({
       })
       this.getaddlist()
   },
+  tiaozhuan(e){
+    console.log(e.currentTarget.dataset.id);
+    wx.navigateTo({
+      url: `/pages/xiangqing/xiangqing?id=${e.currentTarget.dataset.id}`,
+    })
+},
 })

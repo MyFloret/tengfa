@@ -6,11 +6,9 @@ import {
     gengxinindex,
 } from "../../api/request";
 Page({
-
     /**
      * 页面的初始数据
      */
-
     data: {
         car: [],
         flag: false,
@@ -84,9 +82,9 @@ Page({
         this.setData({
             left: '0rpx'
         })
-        console.log(e.currentTarget.dataset.id);
+        // console.log(e.currentTarget.dataset.id);
         getall(e.currentTarget.dataset.id).then(res => {
-            console.log(res.data.data.content);
+            // console.log(res.data.data.content);
             this.setData({
                 endtit: res.data.data.content
             })
@@ -134,6 +132,12 @@ Page({
                 arr: res.data.data.content
             })
             console.log(this.data.arr);
+        })
+    },
+    tiaozhuan(e){
+        console.log(e.currentTarget.dataset.id);
+        wx.navigateTo({
+          url: `/pages/xiangqing/xiangqing?id=${e.currentTarget.dataset.id}`,
         })
     },
 
