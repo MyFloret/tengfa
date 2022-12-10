@@ -2,9 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/songMenu/song",
-        "pages/myCenter/myuc",
-        "pages/xiangqing/xiangqing",
-        "pages/xinche/xinche"
+        "pages/myCenter/myuc"
     ],
     "window": {
         "backgroundTextStyle": "light",
